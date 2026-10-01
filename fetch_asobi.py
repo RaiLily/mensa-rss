@@ -118,7 +118,7 @@ def main():
     except Exception as e:
         print(f"render error: {e}", file=sys.stderr)
         return 0
-    if "login" in final_url or "ログイン" in body[:300]:
+    if "login" in final_url.lower():
         print(f"ログインページに転送されました: {final_url}", file=sys.stderr)
         return 0
     cur, mode = extract(links, body)
