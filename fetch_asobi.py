@@ -2,8 +2,8 @@
 """ASOBI TICKET の一覧ページをヘッドレスブラウザで開き、新しい項目を RSS (asobi-feed.xml) にする。
 
 JavaScript で描画されるページなので Playwright(Chromium) を使う。
-基本は「/booths/ を含むリンク」を1件の項目として扱い、
-見つからない場合はページ本文の行単位で差分を取る。
+ページが裏で読み込むJSON → /booths/ リンク → 画像付きカード → 本文の行
+の順に、取れた方式でイベント一覧を作る。
 """
 import datetime
 import hashlib
@@ -25,9 +25,19 @@ JST = datetime.timezone(datetime.timedelta(hours=9))
 
 def render():
     from playwright.sync_api import sync_playwright
+    jsons = []
+
+    def on_response(res):
+        try:
+            if "json" in (res.headers.get("content-type") or ""):
+                jsons.append((res.url, res.json()))
+        except Exception:
+            pass
+
     with sync_playwright() as p:
         browser = p.chromium.launch()
         page = browser.new_page(locale="ja-JP", viewport={"width": 1280, "height": 2000})
+        page.on("response", on_response)
         page.goto(URL, wait_until="networkidle", timeout=90_000)
         page.wait_for_timeout(3000)
         for _ in range(6):  # 遅延読み込み対策でスクロール
@@ -36,34 +46,101 @@ def render():
         links = page.eval_on_selector_all(
             "a[href]",
             "els => els.map(e => ({href: e.href, text: (e.innerText || '').trim()}))")
+        # 画像付きカードのタイトル（画像から親をたどって最初に文字が出てくる要素）
+        cards = page.eval_on_selector_all("img", """imgs => imgs.map(img => {
+            let el = img.parentElement;
+            for (let i = 0; i < 6 && el; i++, el = el.parentElement) {
+                const t = (el.innerText || '').trim();
+                if (t) return t.length <= 200 ? t : '';
+            }
+            return '';
+        }).filter(t => t)""")
         body = page.inner_text("body")
         final_url = page.url
         browser.close()
-    return links, body, final_url
+    return links, body, final_url, jsons, cards
 
 
 def norm(text):
     return re.sub(r"\s+", " ", text).strip()
 
 
-def extract(links, body):
-    """key -> 表示テキスト。モード名も返す。"""
-    host = urlparse(URL).netloc
+TITLE_KEYS = re.compile(r"^(title|name|.*_?title|.*_?name)$", re.I)
+
+
+def dict_lists(obj, out):
+    if isinstance(obj, list):
+        if len(obj) >= 2 and all(isinstance(x, dict) for x in obj):
+            out.append(obj)
+        for x in obj:
+            dict_lists(x, out)
+    elif isinstance(obj, dict):
+        for v in obj.values():
+            dict_lists(v, out)
+    return out
+
+
+def from_api(jsons, body):
+    """ページが裏で読み込んでいるJSONから、本文に表示されているタイトルの一覧を探す。"""
+    best, best_hits, best_url = None, 0, ""
+    for url, data in jsons:
+        for lst in dict_lists(data, []):
+            title_key = next((k for k in lst[0] if TITLE_KEYS.match(k)
+                              and isinstance(lst[0][k], str)), None)
+            if not title_key:
+                continue
+            hits = sum(1 for x in lst if isinstance(x.get(title_key), str)
+                       and x[title_key].strip() and norm(x[title_key])[:20] in norm(body))
+            if hits >= 2 and hits >= len(lst) * 0.5 and hits > best_hits:
+                best, best_hits, best_url = (lst, title_key), hits, url
+    if not best:
+        return {}
+    lst, title_key = best
+    print(f"API: {best_url}  title_key={title_key}  keys={list(lst[0].keys())[:20]}")
     items = {}
+    for x in lst:
+        title = norm(str(x.get(title_key) or ""))
+        if not title:
+            continue
+        ident = next((str(x[k]) for k in ("id", "code", "slug", "key", "uuid") if x.get(k)), title)
+        link = next((v for k, v in x.items() if isinstance(v, str)
+                     and v.startswith("http") and "url" in k.lower()
+                     and not re.search(r"\.(png|jpe?g|webp|gif)", v, re.I)), URL)
+        status = " ".join(norm(str(x[k])) for k in x
+                          if re.search(r"status|state|label", k, re.I)
+                          and isinstance(x[k], (str, int)) and str(x[k]).strip())
+        items[f"api:{ident}"] = {"text": (title + (f"（{status}）" if status else ""))[:200],
+                                 "link": link}
+    return items
+
+
+def extract(links, body, jsons=(), cards=()):
+    """key -> {text, link}。モード名も返す。"""
+    items = from_api(jsons, body)
+    if items:
+        return items, "api"
+    host = urlparse(URL).netloc
     for a in links:
         u = urlparse(a["href"])
         path = u.path.rstrip("/")
         if u.netloc == host and re.search(r"/booths/[^/]+", path) and norm(a["text"]):
             key = f"{u.netloc}{path}"
-            items[key] = (items.get(key, "") + " " + norm(a["text"])).strip()[:200]
+            text = (items.get(key, {}).get("text", "") + " " + norm(a["text"])).strip()[:200]
+            items[key] = {"text": text, "link": f"https://{key}"}
     if items:
         return items, "links"
-    lines = {}
+    for t in cards:
+        t = norm(t)
+        if 4 <= len(t) <= 200:
+            items[t] = {"text": t, "link": URL}
+    if len(items) >= 2:
+        return items, "cards"
+    items = {}
     for line in body.splitlines():
         line = norm(line)
         if 4 <= len(line) <= 150:
-            lines[line] = line
-    return lines, "text"
+            items[line] = {"text": line, "link": URL}
+    return items, "text"
 
 
 def write_feed(entries, now):
@@ -91,22 +168,23 @@ def write_feed(entries, now):
 
 def diff(old, cur, mode, now):
     new_items = []
-    def add(title, key, text):
-        link = f"https://{key}" if mode == "links" else URL
+
+    def add(title, link, desc, key=""):
         new_items.append({
-            "title": title, "link": link, "description": text,
+            "title": title, "link": link, "description": desc,
             "pubDate": format_datetime(now),
             "guid": hashlib.sha1((title + key + now.isoformat()).encode()).hexdigest(),
         })
     if not old:
-        add(f"【監視開始】一覧の {len(cur)} 件を記録しました", "", f"モード: {mode}")
-        new_items[-1]["link"] = URL
+        names = " / ".join(v["text"] for v in list(cur.values())[:30])
+        add(f"【監視開始】一覧の {len(cur)} 件を記録しました", URL, f"モード: {mode}\n{names}")
         return new_items
-    for key, text in cur.items():
+    for key, v in cur.items():
         if key not in old:
-            add(f"【新着】{text[:80]}", key, text)
-        elif NOTIFY_CHANGES and mode == "links" and old[key] != text:
-            add(f"【更新】{text[:80]}", key, f"変更前: {old[key]}\n変更後: {text}")
+            add(f"【新着】{v['text'][:80]}", v["link"], v["text"], key)
+        elif NOTIFY_CHANGES and mode in ("api", "links") and old[key]["text"] != v["text"]:
+            add(f"【更新】{v['text'][:80]}", v["link"],
+                f"変更前: {old[key]['text']}\n変更後: {v['text']}", key)
     return new_items
 
 
@@ -114,22 +192,24 @@ def main():
     now = datetime.datetime.now(JST)
     state = json.loads(STATE.read_text("utf-8")) if STATE.exists() else {}
     try:
-        links, body, final_url = render()
+        links, body, final_url, jsons, cards = render()
     except Exception as e:
         print(f"render error: {e}", file=sys.stderr)
         return 0
     if "login" in final_url.lower():
         print(f"ログインページに転送されました: {final_url}", file=sys.stderr)
         return 0
-    cur, mode = extract(links, body)
+    cur, mode = extract(links, body, jsons, cards)
     print(f"mode={mode}, {len(cur)} 件")
     for k, v in list(cur.items())[:15]:
-        print("  ", k, "|", v[:80])
+        print("  ", v["text"][:80], "|", v["link"])
     if not cur:
         print("項目が取れなかったので状態を更新しません", file=sys.stderr)
         return 0
 
     old = state.get("items_seen", {}) if state.get("mode") == mode else {}
+    if old and not isinstance(next(iter(old.values())), dict):
+        old = {}
     new_items = diff(old, cur, mode, now)
     entries = state.get("entries", [])
     heartbeat = now.strftime("%Y-%m")
@@ -149,4 +229,3 @@ def main():
 
 if __name__ == "__main__":
     sys.exit(main())
-
