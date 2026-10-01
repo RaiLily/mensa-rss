@@ -1,55 +1,111 @@
 {
- "mode": "text",
+ "mode": "cards",
  "items_seen": {
-  "プレミアム会員とは": "プレミアム会員とは",
-  "ログイン・新規登録": "ログイン・新規登録",
-  "Ver.2": "Ver.2",
-  "受付一覧": "受付一覧",
-  "FAQ・お問い合わせ": "FAQ・お問い合わせ",
-  "チケットの不正に関する報告": "チケットの不正に関する報告",
-  "CHANNEL": "CHANNEL",
-  "STORE": "STORE",
-  "EVENT": "EVENT",
-  "ASOBI CHANNEL TOP": "ASOBI CHANNEL TOP",
-  "ASOBI STORE TOP": "ASOBI STORE TOP",
-  "電子書籍": "電子書籍",
-  "CD / Blu-ray": "CD / Blu-ray",
-  "ASOBI TICKET": "ASOBI TICKET",
-  "ASOBI STAGE": "ASOBI STAGE",
-  "その他先行受付": "その他先行受付",
-  "【重要】バンダイナムコID住所登録方法変更によるメンテナンスのお知らせ・登録情報更新のお願い": "【重要】バンダイナムコID住所登録方法変更によるメンテナンスのお知らせ・登録情報更新のお願い",
-  "テイルズ オブ エクシリア 15th Anniversary Party": "テイルズ オブ エクシリア 15th Anniversary Party",
-  "学園アイドルマスター LIVE TOUR -標- ファイナル公演": "学園アイドルマスター LIVE TOUR -標- ファイナル公演",
-  "THE IDOLM@STER CINDERELLA GIRLS 15th ANNIVERSARY PARTY!!!! ～ for your ONE ～": "THE IDOLM@STER CINDERELLA GIRLS 15th ANNIVERSARY PARTY!!!! ～ for your ONE ～",
-  "shiny, the first REFRAC7IONS \" Still blue \"": "shiny, the first REFRAC7IONS \" Still blue \"",
-  "315 Production presents F＠NTASTIC BATTLE FES ～Wanna step in～": "315 Production presents F＠NTASTIC BATTLE FES ～Wanna step in～",
-  "THE IDOLM@STER CINDERELLA GIRLS 15th ANNIVERSARY ORCHESTRA CONCERT ～ シンデレラの演奏会 ～": "THE IDOLM@STER CINDERELLA GIRLS 15th ANNIVERSARY ORCHESTRA CONCERT ～ シンデレラの演奏会 ～",
-  "ATHOME xR LIVE Apple of my アイ": "ATHOME xR LIVE Apple of my アイ",
-  "電音部 5th LIVE「5EED OF LIGHT」": "電音部 5th LIVE「5EED OF LIGHT」",
-  "THE IDOLM@STER CINDERELLA GIRLS × MILLION LIVE! CLASH M@TCH!!": "THE IDOLM@STER CINDERELLA GIRLS × MILLION LIVE! CLASH M@TCH!!",
-  "THE IDOLM@STER SideM PRODUCER MEETING ～AJewelholIc!!!～": "THE IDOLM@STER SideM PRODUCER MEETING ～AJewelholIc!!!～",
-  "THE IDOLM@STER SHINY COLORS ORCHESTRA CONCERT -Radiant Chord-": "THE IDOLM@STER SHINY COLORS ORCHESTRA CONCERT -Radiant Chord-",
-  "283 Production LIVE Performance noctchill": "283 Production LIVE Performance noctchill",
-  "2件受付中": "2件受付中",
-  "THE IDOLM@STER SideM × SHINY COLORS SPARKLE SHOWDOWN": "THE IDOLM@STER SideM × SHINY COLORS SPARKLE SHOWDOWN",
-  "765 PRODUCTION × 961 PRODUCTION IDOL ULTIMATE ONCE AND FOR ALL": "765 PRODUCTION × 961 PRODUCTION IDOL ULTIMATE ONCE AND FOR ALL",
-  "コンテンツ": "コンテンツ",
-  "ASOBI CHANNEL": "ASOBI CHANNEL",
-  "ASOBI STORE": "ASOBI STORE",
-  "サポート": "サポート",
-  "よくあるご質問": "よくあるご質問",
-  "(FAQ: ASOBI TICKET)": "(FAQ: ASOBI TICKET)",
-  "お問い合わせ": "お問い合わせ",
-  "(ASOBI TICKET)": "(ASOBI TICKET)",
-  "プライバシーオプション": "プライバシーオプション",
-  "ご利用規約": "ご利用規約",
-  "個人情報保護方針": "個人情報保護方針",
-  "特定商取引法に基づく表記": "特定商取引法に基づく表記",
-  "企業情報": "企業情報",
-  "©Bandai Namco Entertainment Inc.": "©Bandai Namco Entertainment Inc.",
-  "Cookie 設定 すべて拒否する すべての Cookie を受け入れる": "Cookie 設定 すべて拒否する すべての Cookie を受け入れる"
+  "プレミアム会員とは ログイン・新規登録 Ver.2 受付一覧 FAQ・お問い合わせ チケットの不正に関する報告": {
+   "text": "プレミアム会員とは ログイン・新規登録 Ver.2 受付一覧 FAQ・お問い合わせ チケットの不正に関する報告",
+   "link": "https://asobiticket2.asobistore.jp/booths"
+  },
+  "ログイン・新規登録": {
+   "text": "ログイン・新規登録",
+   "link": "https://asobiticket2.asobistore.jp/booths"
+  },
+  "CHANNEL STORE EVENT": {
+   "text": "CHANNEL STORE EVENT",
+   "link": "https://asobiticket2.asobistore.jp/booths"
+  },
+  "CHANNEL": {
+   "text": "CHANNEL",
+   "link": "https://asobiticket2.asobistore.jp/booths"
+  },
+  "STORE": {
+   "text": "STORE",
+   "link": "https://asobiticket2.asobistore.jp/booths"
+  },
+  "EVENT": {
+   "text": "EVENT",
+   "link": "https://asobiticket2.asobistore.jp/booths"
+  },
+  "CHANNEL ASOBI CHANNEL TOP STORE ASOBI STORE TOP グッズ ゲーム 電子書籍 CD / Blu-ray EVENT ASOBI TICKET ASOBI STAGE その他先行受付 プレミアム会員とは": {
+   "text": "CHANNEL ASOBI CHANNEL TOP STORE ASOBI STORE TOP グッズ ゲーム 電子書籍 CD / Blu-ray EVENT ASOBI TICKET ASOBI STAGE その他先行受付 プレミアム会員とは",
+   "link": "https://asobiticket2.asobistore.jp/booths"
+  },
+  "テイルズ オブ エクシリア 15th Anniversary Party": {
+   "text": "テイルズ オブ エクシリア 15th Anniversary Party",
+   "link": "https://asobiticket2.asobistore.jp/booths"
+  },
+  "学園アイドルマスター LIVE TOUR -標- ファイナル公演": {
+   "text": "学園アイドルマスター LIVE TOUR -標- ファイナル公演",
+   "link": "https://asobiticket2.asobistore.jp/booths"
+  },
+  "THE IDOLM@STER CINDERELLA GIRLS 15th ANNIVERSARY PARTY!!!! ～ for your ONE ～ 受付中": {
+   "text": "THE IDOLM@STER CINDERELLA GIRLS 15th ANNIVERSARY PARTY!!!! ～ for your ONE ～ 受付中",
+   "link": "https://asobiticket2.asobistore.jp/booths"
+  },
+  "shiny, the first REFRAC7IONS \" Still blue \"": {
+   "text": "shiny, the first REFRAC7IONS \" Still blue \"",
+   "link": "https://asobiticket2.asobistore.jp/booths"
+  },
+  "315 Production presents F＠NTASTIC BATTLE FES ～Wanna step in～": {
+   "text": "315 Production presents F＠NTASTIC BATTLE FES ～Wanna step in～",
+   "link": "https://asobiticket2.asobistore.jp/booths"
+  },
+  "THE IDOLM@STER CINDERELLA GIRLS 15th ANNIVERSARY ORCHESTRA CONCERT ～ シンデレラの演奏会 ～": {
+   "text": "THE IDOLM@STER CINDERELLA GIRLS 15th ANNIVERSARY ORCHESTRA CONCERT ～ シンデレラの演奏会 ～",
+   "link": "https://asobiticket2.asobistore.jp/booths"
+  },
+  "ATHOME xR LIVE Apple of my アイ 受付中": {
+   "text": "ATHOME xR LIVE Apple of my アイ 受付中",
+   "link": "https://asobiticket2.asobistore.jp/booths"
+  },
+  "電音部 5th LIVE「5EED OF LIGHT」 受付中": {
+   "text": "電音部 5th LIVE「5EED OF LIGHT」 受付中",
+   "link": "https://asobiticket2.asobistore.jp/booths"
+  },
+  "THE IDOLM@STER CINDERELLA GIRLS × MILLION LIVE! CLASH M@TCH!!": {
+   "text": "THE IDOLM@STER CINDERELLA GIRLS × MILLION LIVE! CLASH M@TCH!!",
+   "link": "https://asobiticket2.asobistore.jp/booths"
+  },
+  "THE IDOLM@STER SideM PRODUCER MEETING ～AJewelholIc!!!～ 受付中": {
+   "text": "THE IDOLM@STER SideM PRODUCER MEETING ～AJewelholIc!!!～ 受付中",
+   "link": "https://asobiticket2.asobistore.jp/booths"
+  },
+  "THE IDOLM@STER SHINY COLORS ORCHESTRA CONCERT -Radiant Chord- 受付中": {
+   "text": "THE IDOLM@STER SHINY COLORS ORCHESTRA CONCERT -Radiant Chord- 受付中",
+   "link": "https://asobiticket2.asobistore.jp/booths"
+  },
+  "283 Production LIVE Performance noctchill 2件受付中": {
+   "text": "283 Production LIVE Performance noctchill 2件受付中",
+   "link": "https://asobiticket2.asobistore.jp/booths"
+  },
+  "THE IDOLM@STER SideM × SHINY COLORS SPARKLE SHOWDOWN 2件受付中": {
+   "text": "THE IDOLM@STER SideM × SHINY COLORS SPARKLE SHOWDOWN 2件受付中",
+   "link": "https://asobiticket2.asobistore.jp/booths"
+  },
+  "765 PRODUCTION × 961 PRODUCTION IDOL ULTIMATE ONCE AND FOR ALL 受付中": {
+   "text": "765 PRODUCTION × 961 PRODUCTION IDOL ULTIMATE ONCE AND FOR ALL 受付中",
+   "link": "https://asobiticket2.asobistore.jp/booths"
+  },
+  "©Bandai Namco Entertainment Inc.": {
+   "text": "©Bandai Namco Entertainment Inc.",
+   "link": "https://asobiticket2.asobistore.jp/booths"
+  },
+  "プライバシー優先設定センター": {
+   "text": "プライバシー優先設定センター",
+   "link": "https://asobiticket2.asobistore.jp/booths"
+  },
+  "選択内容を決定するすべて拒否する すべて許可する": {
+   "text": "選択内容を決定するすべて拒否する すべて許可する",
+   "link": "https://asobiticket2.asobistore.jp/booths"
+  }
  },
  "entries": [
+  {
+   "title": "【監視開始】一覧の 24 件を記録しました",
+   "link": "https://asobiticket2.asobistore.jp/booths",
+   "description": "モード: cards\nプレミアム会員とは ログイン・新規登録 Ver.2 受付一覧 FAQ・お問い合わせ チケットの不正に関する報告 / ログイン・新規登録 / CHANNEL STORE EVENT / CHANNEL / STORE / EVENT / CHANNEL ASOBI CHANNEL TOP STORE ASOBI STORE TOP グッズ ゲーム 電子書籍 CD / Blu-ray EVENT ASOBI TICKET ASOBI STAGE その他先行受付 プレミアム会員とは / テイルズ オブ エクシリア 15th Anniversary Party / 学園アイドルマスター LIVE TOUR -標- ファイナル公演 / THE IDOLM@STER CINDERELLA GIRLS 15th ANNIVERSARY PARTY!!!! ～ for your ONE ～ 受付中 / shiny, the first REFRAC7IONS \" Still blue \" / 315 Production presents F＠NTASTIC BATTLE FES ～Wanna step in～ / THE IDOLM@STER CINDERELLA GIRLS 15th ANNIVERSARY ORCHESTRA CONCERT ～ シンデレラの演奏会 ～ / ATHOME xR LIVE Apple of my アイ 受付中 / 電音部 5th LIVE「5EED OF LIGHT」 受付中 / THE IDOLM@STER CINDERELLA GIRLS × MILLION LIVE! CLASH M@TCH!! / THE IDOLM@STER SideM PRODUCER MEETING ～AJewelholIc!!!～ 受付中 / THE IDOLM@STER SHINY COLORS ORCHESTRA CONCERT -Radiant Chord- 受付中 / 283 Production LIVE Performance noctchill 2件受付中 / THE IDOLM@STER SideM × SHINY COLORS SPARKLE SHOWDOWN 2件受付中 / 765 PRODUCTION × 961 PRODUCTION IDOL ULTIMATE ONCE AND FOR ALL 受付中 / ©Bandai Namco Entertainment Inc. / プライバシー優先設定センター / 選択内容を決定するすべて拒否する すべて許可する",
+   "pubDate": "Thu, 01 Oct 2026 20:28:50 +0900",
+   "guid": "baf78b4e3028a9ea483367e57dad8601c989c2ee"
+  },
   {
    "title": "【監視開始】一覧の 47 件を記録しました",
    "link": "https://asobiticket2.asobistore.jp/booths",
