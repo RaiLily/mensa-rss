@@ -25,6 +25,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898341+github-actions[bot]@users.noreply.github.com"
-          git pull --rebase
+          git pull --rebase --autostash
           for f in asobi-state.json asobi-feed.xml; do [ ! -f "$f" ] || git add "$f"; done
           git diff --cached --quiet || (git commit -m "Update ASOBI TICKET feed" && git push)
