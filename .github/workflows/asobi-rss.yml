@@ -1,0 +1,30 @@
+name: asobi-ticket-rss
+
+on:
+  schedule:
+    - cron: "47 */3 * * *"   # 3時間ごと
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install Playwright
+        run: |
+          pip install playwright
+          python -m playwright install --with-deps chromium
+      - run: python fetch_asobi.py
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898341+github-actions[bot]@users.noreply.github.com"
+          git pull --rebase
+          git add -A asobi-state.json asobi-feed.xml
+          git diff --cached --quiet || (git commit -m "Update ASOBI TICKET feed" && git push)
