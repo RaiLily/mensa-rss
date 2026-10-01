@@ -6,6 +6,7 @@ import html
 import json
 import re
 import sys
+import urllib.parse
 import urllib.request
 from email.utils import format_datetime
 from pathlib import Path
@@ -27,47 +28,48 @@ def fetch() -> str:
 
 
 def parse(page: str) -> dict:
-    """ページから日程を抽出。key -> {region, datetime, place, note, status, link}"""
-    # タグを消す前に「申し込む」リンク・「満員」画像・地方見出しを目印に置き換える
-    page = re.sub(r'<a[^>]+href="[^"]*/exam/index/notice/id/(\d+)/?"[^>]*>',
-                  r" [[OPEN:\1]] ", page)
-    page = re.sub(r"<img[^>]+entry_quota[^>]*>", " [[FULL]] ", page)
-    page = re.sub(
-        r"<h3[^>]*>(.*?)</h3>",
-        lambda m: "\n[[REGION:" + re.sub(r"<[^>]+>", "", m.group(1)).strip() + "]]\n",
-        page, flags=re.S | re.I)
-    page = re.sub(r"<br\s*/?>|</(li|p|div|dd|dt|tr|td)>", "\n", page, flags=re.I)
-    text = html.unescape(re.sub(r"<[^>]+>", " ", page))
+    """ページから日程を抽出。key -> {region, datetime, place, note, status, link}
 
-    token = re.compile(
-        r"\[\[REGION:(?P<region>.*?)\]\]"
-        r"|日時\s*[：:]\s*(?P<dt>.+?)\s+場所\s*[：:]\s*(?P<place>\S+)"
-        r"(?:\s*(?P<note>このテストには[^\n]*))?"
-        r"|\[\[OPEN:(?P<open>\d+)\]\]"
-        r"|\[\[FULL\]\]"
-    )
-    slots, region, pending = {}, "", None
-    for m in token.finditer(text):
-        if m.group("region") is not None:
-            region = m.group("region")
-        elif m.group("dt"):
-            key = f'{m.group("dt").strip()}|{m.group("place")}'
-            slots[key] = {
-                "region": region,
-                "datetime": m.group("dt").strip(),
-                "place": m.group("place"),
-                "note": (m.group("note") or "").strip(),
-                "status": "不明",
-                "link": URL,
-            }
-            pending = key
-        elif pending:
-            if m.group("open"):
-                slots[pending]["status"] = "受付中"
-                slots[pending]["link"] = f'{URL}index/notice/id/{m.group("open")}/'
-            else:
-                slots[pending]["status"] = "満員"
-            pending = None
+    「日時」から次の「日時」（または次の見出し）までを1枠として切り出し、
+    その中に「満員」画像があれば満員、リンク（申し込むボタン）があれば受付中と判定する。
+    """
+    def clean(fragment):
+        return re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", fragment))).strip()
+
+    heads = [(m.start(), clean(m.group(1)))
+             for m in re.finditer(r"<h3[^>]*>(.*?)</h3>", page, re.S | re.I)]
+    starts = [m.start() for m in re.finditer(r"日時", page)]
+    slots = {}
+    for i, start in enumerate(starts):
+        end = starts[i + 1] if i + 1 < len(starts) else len(page)
+        nxt = [h for h, _ in heads if start < h < end]
+        end = min([end, start + 4000] + nxt)
+        chunk = page[start:end]
+        t = clean(chunk)
+        m = re.search(r"日時 ?[：:] ?(.+?) 場所 ?[：:] ?(\S+)", t)
+        if not m:
+            continue
+        region = ""
+        for h, name in heads:
+            if h < start:
+                region = name
+        note = re.search(r"(このテストには.*?(?:申し込めます|いただけます)。?)", t)
+        status, link = "不明", URL
+        if re.search(r"quota|満員", chunk):
+            status = "満員"
+        else:
+            a = re.search(r"<a[^>]+href=[\"']([^\"']+)[\"']", chunk, re.I)
+            if a:
+                status = "受付中"
+                link = urllib.parse.urljoin(URL, html.unescape(a.group(1)))
+        key = f"{m.group(1).strip()}|{m.group(2)}"
+        slots[key] = {"region": region, "datetime": m.group(1).strip(),
+                      "place": m.group(2), "note": note.group(1) if note else "",
+                      "status": status, "link": link}
+    counts = {}
+    for v in slots.values():
+        counts[v["status"]] = counts.get(v["status"], 0) + 1
+    print(f"{len(slots)} 枠:", counts)
     return slots
 
 
@@ -138,7 +140,7 @@ def main() -> int:
             label = f'{s["region"]} {s["datetime"]} {s["place"]}'
             if key not in old:
                 new_items.append(make_item(f"【新日程・{s['status']}】{label}", s, now))
-            elif old[key]["status"] != s["status"]:
+            elif old[key]["status"] != s["status"] and old[key]["status"] != "不明":
                 tag = "空きあり" if s["status"] == "受付中" else s["status"]
                 new_items.append(make_item(f"【{tag}】{label}", s, now))
 
