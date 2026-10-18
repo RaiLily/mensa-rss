@@ -54,7 +54,7 @@ def parse(page: str) -> dict:
             if h < start:
                 region = name
         note = re.search(r"(このテストには.*?(?:申し込めます|いただけます)。?)", t)
-        status, link = "不明", URL
+        status, link = "締切", URL
         if re.search(r"quota|満員", chunk):
             status = "満員"
         else:
