@@ -65,8 +65,8 @@
    "text": "PROJECT IM@S vα-liv 3rdLIVE ＆ MEETING QONNECT AS ONE 受付中",
    "link": "https://asobiticket2.asobistore.jp/booths"
   },
-  "ATHOME xR LIVE Apple of my アイ 受付中": {
-   "text": "ATHOME xR LIVE Apple of my アイ 受付中",
+  "ATHOME xR LIVE Apple of my アイ": {
+   "text": "ATHOME xR LIVE Apple of my アイ",
    "link": "https://asobiticket2.asobistore.jp/booths"
   },
   "電音部 5th LIVE「5EED OF LIGHT」 受付中": {
@@ -81,8 +81,8 @@
    "text": "THE IDOLM@STER SideM PRODUCER MEETING ～AJewelholIc!!!～",
    "link": "https://asobiticket2.asobistore.jp/booths"
   },
-  "THE IDOLM@STER SHINY COLORS ORCHESTRA CONCERT -Radiant Chord- 受付中": {
-   "text": "THE IDOLM@STER SHINY COLORS ORCHESTRA CONCERT -Radiant Chord- 受付中",
+  "THE IDOLM@STER SHINY COLORS ORCHESTRA CONCERT -Radiant Chord-": {
+   "text": "THE IDOLM@STER SHINY COLORS ORCHESTRA CONCERT -Radiant Chord-",
    "link": "https://asobiticket2.asobistore.jp/booths"
   },
   "283 Production LIVE Performance noctchill": {
@@ -111,6 +111,20 @@
   }
  },
  "entries": [
+  {
+   "title": "【新着】ATHOME xR LIVE Apple of my アイ",
+   "link": "https://asobiticket2.asobistore.jp/booths",
+   "description": "ATHOME xR LIVE Apple of my アイ",
+   "pubDate": "Mon, 19 Oct 2026 01:09:27 +0900",
+   "guid": "8b339bc3702fa93798d7c26ffc22387766ad2d11"
+  },
+  {
+   "title": "【新着】THE IDOLM@STER SHINY COLORS ORCHESTRA CONCERT -Radiant Chord-",
+   "link": "https://asobiticket2.asobistore.jp/booths",
+   "description": "THE IDOLM@STER SHINY COLORS ORCHESTRA CONCERT -Radiant Chord-",
+   "pubDate": "Mon, 19 Oct 2026 01:09:27 +0900",
+   "guid": "146b43f1a9549ede8957f069ef220540bfab23ba"
+  },
   {
    "title": "【新着】PROJECT IM@S vα-liv 3rdLIVE ＆ MEETING QONNECT AS ONE 受付中",
    "link": "https://asobiticket2.asobistore.jp/booths",
