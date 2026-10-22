@@ -1,88 +1,123 @@
 {
- "mode": "text",
+ "mode": "cards",
  "items_seen": {
-  "【重要】10月21日（水）緊急メンテナンスによるサービス停止のお知らせ": {
-   "text": "【重要】10月21日（水）緊急メンテナンスによるサービス停止のお知らせ",
+  "プレミアム会員とは ログイン・新規登録 Ver.2 受付一覧 FAQ・お問い合わせ チケットの不正に関する報告": {
+   "text": "プレミアム会員とは ログイン・新規登録 Ver.2 受付一覧 FAQ・お問い合わせ チケットの不正に関する報告",
    "link": "https://asobiticket2.asobistore.jp/booths"
   },
-  "平素はASOBI STOREをご利用いただき誠にありがとうございます。": {
-   "text": "平素はASOBI STOREをご利用いただき誠にありがとうございます。",
+  "ログイン・新規登録": {
+   "text": "ログイン・新規登録",
    "link": "https://asobiticket2.asobistore.jp/booths"
   },
-  "ASOBI STOREの緊急メンテナンスに伴い、下記の日程において一部サービスの停止を実施いたします。": {
-   "text": "ASOBI STOREの緊急メンテナンスに伴い、下記の日程において一部サービスの停止を実施いたします。",
+  "CHANNEL STORE EVENT": {
+   "text": "CHANNEL STORE EVENT",
    "link": "https://asobiticket2.asobistore.jp/booths"
   },
-  "【サービス停止日程】": {
-   "text": "【サービス停止日程】",
+  "CHANNEL": {
+   "text": "CHANNEL",
    "link": "https://asobiticket2.asobistore.jp/booths"
   },
-  "2026年10月21日（水）20:00 ～ 未定": {
-   "text": "2026年10月21日（水）20:00 ～ 未定",
+  "STORE": {
+   "text": "STORE",
    "link": "https://asobiticket2.asobistore.jp/booths"
   },
-  "ASOBI STOREの緊急メンテナンスに伴い、以下のサービスをご利用いただけません。": {
-   "text": "ASOBI STOREの緊急メンテナンスに伴い、以下のサービスをご利用いただけません。",
+  "EVENT": {
+   "text": "EVENT",
    "link": "https://asobiticket2.asobistore.jp/booths"
   },
-  "【対象となるサービス】": {
-   "text": "【対象となるサービス】",
+  "CHANNEL ASOBI CHANNEL TOP STORE ASOBI STORE TOP グッズ ゲーム 電子書籍 CD / Blu-ray EVENT ASOBI TICKET ASOBI STAGE その他先行受付 プレミアム会員とは": {
+   "text": "CHANNEL ASOBI CHANNEL TOP STORE ASOBI STORE TOP グッズ ゲーム 電子書籍 CD / Blu-ray EVENT ASOBI TICKET ASOBI STAGE その他先行受付 プレミアム会員とは",
    "link": "https://asobiticket2.asobistore.jp/booths"
   },
-  "ASOBI マイページ 「https://asobistore.jp/」": {
-   "text": "ASOBI マイページ 「https://asobistore.jp/」",
+  "ゼロキョリコネクト No.3 ～陰キャラブコメ編～ Supported by xeen 受付中": {
+   "text": "ゼロキョリコネクト No.3 ～陰キャラブコメ編～ Supported by xeen 受付中",
    "link": "https://asobiticket2.asobistore.jp/booths"
   },
-  "ASOBI STORE(グッズ) 「https://shop.asobistore.jp/」": {
-   "text": "ASOBI STORE(グッズ) 「https://shop.asobistore.jp/」",
+  "テイルズ オブ エクシリア 15th Anniversary Party 受付中": {
+   "text": "テイルズ オブ エクシリア 15th Anniversary Party 受付中",
    "link": "https://asobiticket2.asobistore.jp/booths"
   },
-  "ASOBI CHANNEL 「https://asobichannel.asobistore.jp/」": {
-   "text": "ASOBI CHANNEL 「https://asobichannel.asobistore.jp/」",
+  "学園アイドルマスター LIVE TOUR -標- ファイナル公演 2件受付中": {
+   "text": "学園アイドルマスター LIVE TOUR -標- ファイナル公演 2件受付中",
    "link": "https://asobiticket2.asobistore.jp/booths"
   },
-  "ASOBI STAGE 「https://asobistage.asobistore.jp/」": {
-   "text": "ASOBI STAGE 「https://asobistage.asobistore.jp/」",
+  "THE IDOLM@STER CINDERELLA GIRLS 15th ANNIVERSARY PARTY!!!! ～ for your ONE ～": {
+   "text": "THE IDOLM@STER CINDERELLA GIRLS 15th ANNIVERSARY PARTY!!!! ～ for your ONE ～",
    "link": "https://asobiticket2.asobistore.jp/booths"
   },
-  "ASOBI STORY 「https://asobistory.asobistore.jp/」": {
-   "text": "ASOBI STORY 「https://asobistory.asobistore.jp/」",
+  "xR LIVE REVIVAL 受付中": {
+   "text": "xR LIVE REVIVAL 受付中",
    "link": "https://asobiticket2.asobistore.jp/booths"
   },
-  "ASOBI STORE(ゲーム〈steam®コード〉) 「https://gc.asobistore.jp/」": {
-   "text": "ASOBI STORE(ゲーム〈steam®コード〉) 「https://gc.asobistore.jp/」",
+  "shiny, the first REFRAC7IONS \" Still blue \"": {
+   "text": "shiny, the first REFRAC7IONS \" Still blue \"",
    "link": "https://asobiticket2.asobistore.jp/booths"
   },
-  "ASOBI STORE(電子書籍) 「https://book.asobistore.jp/」": {
-   "text": "ASOBI STORE(電子書籍) 「https://book.asobistore.jp/」",
+  "315 Production presents F＠NTASTIC BATTLE FES ～Wanna step in～": {
+   "text": "315 Production presents F＠NTASTIC BATTLE FES ～Wanna step in～",
    "link": "https://asobiticket2.asobistore.jp/booths"
   },
-  "ASOBI STORE(音楽)DLページ 「https://music.asobistore.jp/」": {
-   "text": "ASOBI STORE(音楽)DLページ 「https://music.asobistore.jp/」",
+  "THE IDOLM@STER CINDERELLA GIRLS 15th ANNIVERSARY ORCHESTRA CONCERT ～ シンデレラの演奏会 ～ 受付中": {
+   "text": "THE IDOLM@STER CINDERELLA GIRLS 15th ANNIVERSARY ORCHESTRA CONCERT ～ シンデレラの演奏会 ～ 受付中",
    "link": "https://asobiticket2.asobistore.jp/booths"
   },
-  "ASOBI STORE LABO 「https://lab.asobistore.jp/」": {
-   "text": "ASOBI STORE LABO 「https://lab.asobistore.jp/」",
+  "PROJECT IM@S vα-liv 3rdLIVE ＆ MEETING QONNECT AS ONE 受付中": {
+   "text": "PROJECT IM@S vα-liv 3rdLIVE ＆ MEETING QONNECT AS ONE 受付中",
    "link": "https://asobiticket2.asobistore.jp/booths"
   },
-  "ASOBI TICKET 「https://asobiticket2.asobistore.jp/」": {
-   "text": "ASOBI TICKET 「https://asobiticket2.asobistore.jp/」",
+  "ATHOME xR LIVE Apple of my アイ": {
+   "text": "ATHOME xR LIVE Apple of my アイ",
    "link": "https://asobiticket2.asobistore.jp/booths"
   },
-  "※メンテナンス時間は前後する可能性がございます。あらかじめご了承ください。": {
-   "text": "※メンテナンス時間は前後する可能性がございます。あらかじめご了承ください。",
+  "電音部 5th LIVE「5EED OF LIGHT」 受付中": {
+   "text": "電音部 5th LIVE「5EED OF LIGHT」 受付中",
    "link": "https://asobiticket2.asobistore.jp/booths"
   },
-  "ご利用のお客様にはご迷惑ならびにご不便をおかけいたしますこと、お詫び申し上げます。": {
-   "text": "ご利用のお客様にはご迷惑ならびにご不便をおかけいたしますこと、お詫び申し上げます。",
+  "THE IDOLM@STER CINDERELLA GIRLS × MILLION LIVE! CLASH M@TCH!! 受付中": {
+   "text": "THE IDOLM@STER CINDERELLA GIRLS × MILLION LIVE! CLASH M@TCH!! 受付中",
    "link": "https://asobiticket2.asobistore.jp/booths"
   },
-  "何卒ご理解賜りますようお願い申し上げます。": {
-   "text": "何卒ご理解賜りますようお願い申し上げます。",
+  "THE IDOLM@STER SideM PRODUCER MEETING ～AJewelholIc!!!～": {
+   "text": "THE IDOLM@STER SideM PRODUCER MEETING ～AJewelholIc!!!～",
+   "link": "https://asobiticket2.asobistore.jp/booths"
+  },
+  "THE IDOLM@STER SHINY COLORS ORCHESTRA CONCERT -Radiant Chord-": {
+   "text": "THE IDOLM@STER SHINY COLORS ORCHESTRA CONCERT -Radiant Chord-",
+   "link": "https://asobiticket2.asobistore.jp/booths"
+  },
+  "283 Production LIVE Performance noctchill": {
+   "text": "283 Production LIVE Performance noctchill",
+   "link": "https://asobiticket2.asobistore.jp/booths"
+  },
+  "THE IDOLM@STER SideM × SHINY COLORS SPARKLE SHOWDOWN": {
+   "text": "THE IDOLM@STER SideM × SHINY COLORS SPARKLE SHOWDOWN",
+   "link": "https://asobiticket2.asobistore.jp/booths"
+  },
+  "765 PRODUCTION × 961 PRODUCTION IDOL ULTIMATE ONCE AND FOR ALL 受付中": {
+   "text": "765 PRODUCTION × 961 PRODUCTION IDOL ULTIMATE ONCE AND FOR ALL 受付中",
+   "link": "https://asobiticket2.asobistore.jp/booths"
+  },
+  "©Bandai Namco Entertainment Inc.": {
+   "text": "©Bandai Namco Entertainment Inc.",
+   "link": "https://asobiticket2.asobistore.jp/booths"
+  },
+  "プライバシー優先設定センター": {
+   "text": "プライバシー優先設定センター",
+   "link": "https://asobiticket2.asobistore.jp/booths"
+  },
+  "選択内容を決定するすべて拒否する すべて許可する": {
+   "text": "選択内容を決定するすべて拒否する すべて許可する",
    "link": "https://asobiticket2.asobistore.jp/booths"
   }
  },
  "entries": [
+  {
+   "title": "【監視開始】一覧の 27 件を記録しました",
+   "link": "https://asobiticket2.asobistore.jp/booths",
+   "description": "モード: cards\nプレミアム会員とは ログイン・新規登録 Ver.2 受付一覧 FAQ・お問い合わせ チケットの不正に関する報告 / ログイン・新規登録 / CHANNEL STORE EVENT / CHANNEL / STORE / EVENT / CHANNEL ASOBI CHANNEL TOP STORE ASOBI STORE TOP グッズ ゲーム 電子書籍 CD / Blu-ray EVENT ASOBI TICKET ASOBI STAGE その他先行受付 プレミアム会員とは / ゼロキョリコネクト No.3 ～陰キャラブコメ編～ Supported by xeen 受付中 / テイルズ オブ エクシリア 15th Anniversary Party 受付中 / 学園アイドルマスター LIVE TOUR -標- ファイナル公演 2件受付中 / THE IDOLM@STER CINDERELLA GIRLS 15th ANNIVERSARY PARTY!!!! ～ for your ONE ～ / xR LIVE REVIVAL 受付中 / shiny, the first REFRAC7IONS \" Still blue \" / 315 Production presents F＠NTASTIC BATTLE FES ～Wanna step in～ / THE IDOLM@STER CINDERELLA GIRLS 15th ANNIVERSARY ORCHESTRA CONCERT ～ シンデレラの演奏会 ～ 受付中 / PROJECT IM@S vα-liv 3rdLIVE ＆ MEETING QONNECT AS ONE 受付中 / ATHOME xR LIVE Apple of my アイ / 電音部 5th LIVE「5EED OF LIGHT」 受付中 / THE IDOLM@STER CINDERELLA GIRLS × MILLION LIVE! CLASH M@TCH!! 受付中 / THE IDOLM@STER SideM PRODUCER MEETING ～AJewelholIc!!!～ / THE IDOLM@STER SHINY COLORS ORCHESTRA CONCERT -Radiant Chord- / 283 Production LIVE Performance noctchill / THE IDOLM@STER SideM × SHINY COLORS SPARKLE SHOWDOWN / 765 PRODUCTION × 961 PRODUCTION IDOL ULTIMATE ONCE AND FOR ALL 受付中 / ©Bandai Namco Entertainment Inc. / プライバシー優先設定センター / 選択内容を決定するすべて拒否する すべて許可する",
+   "pubDate": "Thu, 22 Oct 2026 14:25:32 +0900",
+   "guid": "0d070c14cd96c52da04545a4be96e5a90608a485"
+  },
   {
    "title": "【監視開始】一覧の 20 件を記録しました",
    "link": "https://asobiticket2.asobistore.jp/booths",
