@@ -29,8 +29,8 @@
    "text": "CHANNEL ASOBI CHANNEL TOP STORE ASOBI STORE TOP グッズ ゲーム 電子書籍 CD / Blu-ray EVENT ASOBI TICKET ASOBI STAGE その他先行受付 プレミアム会員とは",
    "link": "https://asobiticket2.asobistore.jp/booths"
   },
-  "テイルズ オブ エクシリア 15th Anniversary Party 受付中": {
-   "text": "テイルズ オブ エクシリア 15th Anniversary Party 受付中",
+  "テイルズ オブ エクシリア 15th Anniversary Party": {
+   "text": "テイルズ オブ エクシリア 15th Anniversary Party",
    "link": "https://asobiticket2.asobistore.jp/booths"
   },
   "学園アイドルマスター LIVE TOUR -標- ファイナル公演 3件受付中": {
@@ -53,8 +53,8 @@
    "text": "315 Production presents F＠NTASTIC BATTLE FES ～Wanna step in～ 2件受付中",
    "link": "https://asobiticket2.asobistore.jp/booths"
   },
-  "THE IDOLM@STER CINDERELLA GIRLS 15th ANNIVERSARY ORCHESTRA CONCERT ～ シンデレラの演奏会 ～ 受付中": {
-   "text": "THE IDOLM@STER CINDERELLA GIRLS 15th ANNIVERSARY ORCHESTRA CONCERT ～ シンデレラの演奏会 ～ 受付中",
+  "THE IDOLM@STER CINDERELLA GIRLS 15th ANNIVERSARY ORCHESTRA CONCERT ～ シンデレラの演奏会 ～": {
+   "text": "THE IDOLM@STER CINDERELLA GIRLS 15th ANNIVERSARY ORCHESTRA CONCERT ～ シンデレラの演奏会 ～",
    "link": "https://asobiticket2.asobistore.jp/booths"
   },
   "PROJECT IM@S vα-liv 3rdLIVE ＆ MEETING QONNECT AS ONE 受付中": {
@@ -65,8 +65,8 @@
    "text": "ATHOME xR LIVE Apple of my アイ",
    "link": "https://asobiticket2.asobistore.jp/booths"
   },
-  "電音部 5th LIVE「5EED OF LIGHT」 受付中": {
-   "text": "電音部 5th LIVE「5EED OF LIGHT」 受付中",
+  "電音部 5th LIVE「5EED OF LIGHT」": {
+   "text": "電音部 5th LIVE「5EED OF LIGHT」",
    "link": "https://asobiticket2.asobistore.jp/booths"
   },
   "THE IDOLM@STER CINDERELLA GIRLS × MILLION LIVE! CLASH M@TCH!! 受付中": {
@@ -107,6 +107,27 @@
   }
  },
  "entries": [
+  {
+   "title": "【新着】テイルズ オブ エクシリア 15th Anniversary Party",
+   "link": "https://asobiticket2.asobistore.jp/booths",
+   "description": "テイルズ オブ エクシリア 15th Anniversary Party",
+   "pubDate": "Mon, 26 Oct 2026 01:51:03 +0900",
+   "guid": "c66f8e63cf0b5412af0215f8d5a9a880571a01b8"
+  },
+  {
+   "title": "【新着】THE IDOLM@STER CINDERELLA GIRLS 15th ANNIVERSARY ORCHESTRA CONCERT ～ シンデレラの演奏会 ～",
+   "link": "https://asobiticket2.asobistore.jp/booths",
+   "description": "THE IDOLM@STER CINDERELLA GIRLS 15th ANNIVERSARY ORCHESTRA CONCERT ～ シンデレラの演奏会 ～",
+   "pubDate": "Mon, 26 Oct 2026 01:51:03 +0900",
+   "guid": "c2f558b4e2826ccb48894c379139c070afe5c628"
+  },
+  {
+   "title": "【新着】電音部 5th LIVE「5EED OF LIGHT」",
+   "link": "https://asobiticket2.asobistore.jp/booths",
+   "description": "電音部 5th LIVE「5EED OF LIGHT」",
+   "pubDate": "Mon, 26 Oct 2026 01:51:03 +0900",
+   "guid": "b9816a25be4fbf7a42abcb6c96c278a7f1df056b"
+  },
   {
    "title": "【新着】ゼロキョリコネクト No.3 ～陰キャラブコメ編～ Supported by xeen",
    "link": "https://asobiticket2.asobistore.jp/booths",
