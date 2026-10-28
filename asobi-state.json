@@ -33,8 +33,8 @@
    "text": "テイルズ オブ エクシリア 15th Anniversary Party 受付中",
    "link": "https://asobiticket2.asobistore.jp/booths"
   },
-  "学園アイドルマスター LIVE TOUR -標- ファイナル公演 受付中": {
-   "text": "学園アイドルマスター LIVE TOUR -標- ファイナル公演 受付中",
+  "学園アイドルマスター LIVE TOUR -標- ファイナル公演": {
+   "text": "学園アイドルマスター LIVE TOUR -標- ファイナル公演",
    "link": "https://asobiticket2.asobistore.jp/booths"
   },
   "THE IDOLM@STER CINDERELLA GIRLS 15th ANNIVERSARY PARTY!!!! ～ for your ONE ～": {
@@ -107,6 +107,13 @@
   }
  },
  "entries": [
+  {
+   "title": "【新着】学園アイドルマスター LIVE TOUR -標- ファイナル公演",
+   "link": "https://asobiticket2.asobistore.jp/booths",
+   "description": "学園アイドルマスター LIVE TOUR -標- ファイナル公演",
+   "pubDate": "Thu, 29 Oct 2026 05:35:47 +0900",
+   "guid": "327eac7acf78dab27fdc427864980aafc989d811"
+  },
   {
    "title": "【新着】テイルズ オブ エクシリア 15th Anniversary Party 受付中",
    "link": "https://asobiticket2.asobistore.jp/booths",
