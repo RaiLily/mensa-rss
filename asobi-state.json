@@ -29,12 +29,12 @@
    "text": "CHANNEL ASOBI CHANNEL TOP STORE ASOBI STORE TOP グッズ ゲーム 電子書籍 CD / Blu-ray EVENT ASOBI TICKET ASOBI STAGE その他先行受付 プレミアム会員とは",
    "link": "https://asobiticket2.asobistore.jp/booths"
   },
-  "テイルズ オブ エクシリア 15th Anniversary Party": {
-   "text": "テイルズ オブ エクシリア 15th Anniversary Party",
+  "テイルズ オブ エクシリア 15th Anniversary Party 受付中": {
+   "text": "テイルズ オブ エクシリア 15th Anniversary Party 受付中",
    "link": "https://asobiticket2.asobistore.jp/booths"
   },
-  "学園アイドルマスター LIVE TOUR -標- ファイナル公演 3件受付中": {
-   "text": "学園アイドルマスター LIVE TOUR -標- ファイナル公演 3件受付中",
+  "学園アイドルマスター LIVE TOUR -標- ファイナル公演 受付中": {
+   "text": "学園アイドルマスター LIVE TOUR -標- ファイナル公演 受付中",
    "link": "https://asobiticket2.asobistore.jp/booths"
   },
   "THE IDOLM@STER CINDERELLA GIRLS 15th ANNIVERSARY PARTY!!!! ～ for your ONE ～": {
@@ -107,6 +107,20 @@
   }
  },
  "entries": [
+  {
+   "title": "【新着】テイルズ オブ エクシリア 15th Anniversary Party 受付中",
+   "link": "https://asobiticket2.asobistore.jp/booths",
+   "description": "テイルズ オブ エクシリア 15th Anniversary Party 受付中",
+   "pubDate": "Wed, 28 Oct 2026 15:22:03 +0900",
+   "guid": "f41ddfc76119fd0de105de70eaffd7833ad8ab3b"
+  },
+  {
+   "title": "【新着】学園アイドルマスター LIVE TOUR -標- ファイナル公演 受付中",
+   "link": "https://asobiticket2.asobistore.jp/booths",
+   "description": "学園アイドルマスター LIVE TOUR -標- ファイナル公演 受付中",
+   "pubDate": "Wed, 28 Oct 2026 15:22:03 +0900",
+   "guid": "8bbb2f3f85770f15d5d635f28cdc08e4b658c2e8"
+  },
   {
    "title": "【新着】テイルズ オブ エクシリア 15th Anniversary Party",
    "link": "https://asobiticket2.asobistore.jp/booths",
