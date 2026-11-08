@@ -29,16 +29,12 @@
    "text": "CHANNEL ASOBI CHANNEL TOP STORE ASOBI STORE TOP グッズ ゲーム 電子書籍 CD / Blu-ray EVENT ASOBI TICKET ASOBI STAGE その他先行受付 プレミアム会員とは",
    "link": "https://asobiticket2.asobistore.jp/booths"
   },
-  "学園アイドルマスター LIVE TOUR -標- ファイナル公演": {
-   "text": "学園アイドルマスター LIVE TOUR -標- ファイナル公演",
-   "link": "https://asobiticket2.asobistore.jp/booths"
-  },
   "THE IDOLM@STER CINDERELLA GIRLS 15th ANNIVERSARY PARTY!!!! ～ for your ONE ～ 3件受付中": {
    "text": "THE IDOLM@STER CINDERELLA GIRLS 15th ANNIVERSARY PARTY!!!! ～ for your ONE ～ 3件受付中",
    "link": "https://asobiticket2.asobistore.jp/booths"
   },
-  "xR LIVE REVIVAL 受付中": {
-   "text": "xR LIVE REVIVAL 受付中",
+  "xR LIVE REVIVAL": {
+   "text": "xR LIVE REVIVAL",
    "link": "https://asobiticket2.asobistore.jp/booths"
   },
   "shiny, the first REFRAC7IONS \" Still blue \"": {
@@ -85,8 +81,8 @@
    "text": "THE IDOLM@STER SideM × SHINY COLORS SPARKLE SHOWDOWN",
    "link": "https://asobiticket2.asobistore.jp/booths"
   },
-  "765 PRODUCTION × 961 PRODUCTION IDOL ULTIMATE ONCE AND FOR ALL 受付中": {
-   "text": "765 PRODUCTION × 961 PRODUCTION IDOL ULTIMATE ONCE AND FOR ALL 受付中",
+  "765 PRODUCTION × 961 PRODUCTION IDOL ULTIMATE ONCE AND FOR ALL": {
+   "text": "765 PRODUCTION × 961 PRODUCTION IDOL ULTIMATE ONCE AND FOR ALL",
    "link": "https://asobiticket2.asobistore.jp/booths"
   },
   "©Bandai Namco Entertainment Inc.": {
@@ -103,6 +99,20 @@
   }
  },
  "entries": [
+  {
+   "title": "【新着】xR LIVE REVIVAL",
+   "link": "https://asobiticket2.asobistore.jp/booths",
+   "description": "xR LIVE REVIVAL",
+   "pubDate": "Mon, 09 Nov 2026 04:59:13 +0900",
+   "guid": "39688af931ebf2cf03e7e237aada9f2e80c58c52"
+  },
+  {
+   "title": "【新着】765 PRODUCTION × 961 PRODUCTION IDOL ULTIMATE ONCE AND FOR ALL",
+   "link": "https://asobiticket2.asobistore.jp/booths",
+   "description": "765 PRODUCTION × 961 PRODUCTION IDOL ULTIMATE ONCE AND FOR ALL",
+   "pubDate": "Mon, 09 Nov 2026 04:59:13 +0900",
+   "guid": "ca2949a22e680af0037021648e63c55609a781a4"
+  },
   {
    "title": "【新着】THE IDOLM@STER CINDERELLA GIRLS 15th ANNIVERSARY PARTY!!!! ～ for your ONE ～ 3件受付",
    "link": "https://asobiticket2.asobistore.jp/booths",
