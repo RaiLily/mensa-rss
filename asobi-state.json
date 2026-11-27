@@ -65,8 +65,8 @@
    "text": "電音部 5th LIVE「5EED OF LIGHT」",
    "link": "https://asobiticket2.asobistore.jp/booths"
   },
-  "THE IDOLM@STER CINDERELLA GIRLS × MILLION LIVE! CLASH M@TCH!!": {
-   "text": "THE IDOLM@STER CINDERELLA GIRLS × MILLION LIVE! CLASH M@TCH!!",
+  "THE IDOLM@STER CINDERELLA GIRLS × MILLION LIVE! CLASH M@TCH!! 受付中": {
+   "text": "THE IDOLM@STER CINDERELLA GIRLS × MILLION LIVE! CLASH M@TCH!! 受付中",
    "link": "https://asobiticket2.asobistore.jp/booths"
   },
   "THE IDOLM@STER SideM PRODUCER MEETING ～AJewelholIc!!!～": {
@@ -103,6 +103,13 @@
   }
  },
  "entries": [
+  {
+   "title": "【新着】THE IDOLM@STER CINDERELLA GIRLS × MILLION LIVE! CLASH M@TCH!! 受付中",
+   "link": "https://asobiticket2.asobistore.jp/booths",
+   "description": "THE IDOLM@STER CINDERELLA GIRLS × MILLION LIVE! CLASH M@TCH!! 受付中",
+   "pubDate": "Fri, 27 Nov 2026 22:10:28 +0900",
+   "guid": "5277736079a783e529002cd933fdb382618065f4"
+  },
   {
    "title": "【新着】THE IDOLM@STER SideM PRODUCER MEETING ～AJewelholIc!!!～",
    "link": "https://asobiticket2.asobistore.jp/booths",
@@ -445,13 +452,6 @@
    "description": "xR LIVE REVIVAL 受付中",
    "pubDate": "Sat, 03 Oct 2026 21:04:20 +0900",
    "guid": "062867b6b21f495203482a8017ca5bbc72417ec8"
-  },
-  {
-   "title": "【新着】315 Production presents F＠NTASTIC BATTLE FES ～Wanna step in～ 2件受付中",
-   "link": "https://asobiticket2.asobistore.jp/booths",
-   "description": "315 Production presents F＠NTASTIC BATTLE FES ～Wanna step in～ 2件受付中",
-   "pubDate": "Fri, 02 Oct 2026 15:16:37 +0900",
-   "guid": "9404ed698fcc09381b4fa65b76e6f47fc253603a"
   }
  ],
  "heartbeat": "2026-11"
