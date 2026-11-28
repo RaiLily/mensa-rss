@@ -29,12 +29,12 @@
    "text": "CHANNEL ASOBI CHANNEL TOP STORE ASOBI STORE TOP グッズ ゲーム 電子書籍 CD / Blu-ray EVENT ASOBI TICKET ASOBI STAGE その他先行受付 プレミアム会員とは",
    "link": "https://asobiticket2.asobistore.jp/booths"
   },
-  "ゼロキョリコネクト No.4 ～インディーゲーム編～ Supported by xeen 受付中": {
-   "text": "ゼロキョリコネクト No.4 ～インディーゲーム編～ Supported by xeen 受付中",
+  "ゼロキョリコネクト No.4 ～インディーゲーム編～ Supported by xeen": {
+   "text": "ゼロキョリコネクト No.4 ～インディーゲーム編～ Supported by xeen",
    "link": "https://asobiticket2.asobistore.jp/booths"
   },
-  "THE IDOLM@STER CINDERELLA GIRLS 15th ANNIVERSARY PARTY!!!! ～ for your ONE ～ 2件受付中": {
-   "text": "THE IDOLM@STER CINDERELLA GIRLS 15th ANNIVERSARY PARTY!!!! ～ for your ONE ～ 2件受付中",
+  "THE IDOLM@STER CINDERELLA GIRLS 15th ANNIVERSARY PARTY!!!! ～ for your ONE ～ 受付中": {
+   "text": "THE IDOLM@STER CINDERELLA GIRLS 15th ANNIVERSARY PARTY!!!! ～ for your ONE ～ 受付中",
    "link": "https://asobiticket2.asobistore.jp/booths"
   },
   "xR LIVE REVIVAL 6件受付中": {
@@ -61,8 +61,8 @@
    "text": "ATHOME xR LIVE Apple of my アイ",
    "link": "https://asobiticket2.asobistore.jp/booths"
   },
-  "電音部 5th LIVE「5EED OF LIGHT」": {
-   "text": "電音部 5th LIVE「5EED OF LIGHT」",
+  "電音部 5th LIVE「5EED OF LIGHT」 受付中": {
+   "text": "電音部 5th LIVE「5EED OF LIGHT」 受付中",
    "link": "https://asobiticket2.asobistore.jp/booths"
   },
   "THE IDOLM@STER CINDERELLA GIRLS × MILLION LIVE! CLASH M@TCH!! 受付中": {
@@ -103,6 +103,27 @@
   }
  },
  "entries": [
+  {
+   "title": "【新着】ゼロキョリコネクト No.4 ～インディーゲーム編～ Supported by xeen",
+   "link": "https://asobiticket2.asobistore.jp/booths",
+   "description": "ゼロキョリコネクト No.4 ～インディーゲーム編～ Supported by xeen",
+   "pubDate": "Sat, 28 Nov 2026 17:29:05 +0900",
+   "guid": "1015d275f52b31ee16959464598213a842619d13"
+  },
+  {
+   "title": "【新着】THE IDOLM@STER CINDERELLA GIRLS 15th ANNIVERSARY PARTY!!!! ～ for your ONE ～ 受付中",
+   "link": "https://asobiticket2.asobistore.jp/booths",
+   "description": "THE IDOLM@STER CINDERELLA GIRLS 15th ANNIVERSARY PARTY!!!! ～ for your ONE ～ 受付中",
+   "pubDate": "Sat, 28 Nov 2026 17:29:05 +0900",
+   "guid": "b7035cef7c166c1546ebbb89907fd3a4d3df201b"
+  },
+  {
+   "title": "【新着】電音部 5th LIVE「5EED OF LIGHT」 受付中",
+   "link": "https://asobiticket2.asobistore.jp/booths",
+   "description": "電音部 5th LIVE「5EED OF LIGHT」 受付中",
+   "pubDate": "Sat, 28 Nov 2026 17:29:05 +0900",
+   "guid": "d82a3858f15ddb90c0fba476479dbf1ee94c28da"
+  },
   {
    "title": "【新着】THE IDOLM@STER CINDERELLA GIRLS 15th ANNIVERSARY PARTY!!!! ～ for your ONE ～ 2件受付",
    "link": "https://asobiticket2.asobistore.jp/booths",
@@ -431,27 +452,6 @@
    "description": "THE IDOLM@STER SideM × SHINY COLORS SPARKLE SHOWDOWN",
    "pubDate": "Tue, 13 Oct 2026 01:10:27 +0900",
    "guid": "4600f4c41d79b9fe19c6d9dfd562ed4ec6b7a357"
-  },
-  {
-   "title": "【新着】テイルズ オブ エクシリア 15th Anniversary Party 受付中",
-   "link": "https://asobiticket2.asobistore.jp/booths",
-   "description": "テイルズ オブ エクシリア 15th Anniversary Party 受付中",
-   "pubDate": "Sat, 10 Oct 2026 15:25:11 +0900",
-   "guid": "a2f9a40f806a27e0b7f1c2a73d610204220569a0"
-  },
-  {
-   "title": "【新着】THE IDOLM@STER CINDERELLA GIRLS × MILLION LIVE! CLASH M@TCH!! 受付中",
-   "link": "https://asobiticket2.asobistore.jp/booths",
-   "description": "THE IDOLM@STER CINDERELLA GIRLS × MILLION LIVE! CLASH M@TCH!! 受付中",
-   "pubDate": "Wed, 07 Oct 2026 15:32:58 +0900",
-   "guid": "575b77353531348863def949b6c1d567b59ff426"
-  },
-  {
-   "title": "【新着】THE IDOLM@STER SideM PRODUCER MEETING ～AJewelholIc!!!～",
-   "link": "https://asobiticket2.asobistore.jp/booths",
-   "description": "THE IDOLM@STER SideM PRODUCER MEETING ～AJewelholIc!!!～",
-   "pubDate": "Mon, 05 Oct 2026 03:48:40 +0900",
-   "guid": "5902731025f5ac442bbabbf700e83cde9fea13be"
   }
  ],
  "heartbeat": "2026-11"
